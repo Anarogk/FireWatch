@@ -5,7 +5,7 @@ pub struct FireSensors<TEMP, SMOKE> {
     temp_sensor: TEMP,
     smoke_sensor: SMOKE,
 }
-    
+
 impl<TEMP, SMOKE> FireSensors<TEMP, SMOKE>
 where
     TEMP: Adc<pac::ADC1, u16>,
