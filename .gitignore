@@ -1,0 +1,51 @@
+# Ignore Rust target directory (build output)
+target/
+
+# Ignore any Cargo.lock files (if the project is a library, otherwise include it)
+Cargo.lock
+
+# Ignore backup files
+*.bak
+*.tmp
+*.swp
+
+# Ignore build artifacts and intermediate files
+*.o
+*.a
+*.d
+
+# Ignore editor-specific files (e.g., VSCode, JetBrains, etc.)
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Ignore MacOS-specific files
+.DS_Store
+
+# Ignore generated docs and documentation outputs
+doc/
+*.html
+
+# Ignore files related to RTT and debug logs
+*.log
+rtt_trace*
+
+# Ignore example build artifacts
+examples/*.o
+examples/*.elf
+
+# Ignore memory layout files and linker scripts
+boards/*/memory.x
+boards/*/build.rs
+
+# Ignore configuration files (e.g., MQTT configuration)
+config/*.toml
+
+# Ignore any files related to flashing or firmware uploads
+*.bin
+*.hex
+*.dfu
+
+# Ignore Git metadata
+*.patch
